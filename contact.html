@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Gals on the Go</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #ff69b4;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffe4e1;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .container h2 {
+            color: #ff69b4;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #ff1493;
+        }
+        footer {
+            background-color: #ff69b4;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Gals on the Go</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="container">
+        <h2>Get in Touch</h2>
+        <p>If you have any questions, suggestions, or stories to share, feel free to reach out to us!</p>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Gals on the Go. All rights reserved.</p>
+    </footer>
+</body>
+</html>
