@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gals on the Go</title>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Gals on the Go</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="container">
+    <h2>Featured Destinations</h2>
+    <ul>
+        <li><strong>Paris, France:</strong> Experience the beauty of the Eiffel Tower and local cuisine.</li>
+        <li><strong>Tokyo, Japan:</strong> Discover culture, technology, and tradition all in one place.</li>
+        <li><strong>Sydney, Australia:</strong> Enjoy the beaches, wildlife, and iconic Sydney Opera House.</li>
+    </ul>
+
+    <h3>Travel Tips</h3>
+    <p><u>Always</u> carry a copy of your important documents and stay <em>aware</em> of your surroundings.</p>
+
+    <table border="1">
+        <tr>
+            <th>Destination</th>
+            <th>Best Season to Visit</th>
+            <th>Average Budget</th>
+        </tr>
+        <tr>
+            <td><b>Paris</b></td>
+            <td>Spring</td>
+            <td>$2,500</td>
+        </tr>
+        <tr>
+            <td><b>Tokyo</b></td>
+            <td>Fall</td>
+            <td>$3,000</td>
+        </tr>
+        <tr>
+            <td><b>Sydney</b></td>
+            <td>Summer</td>
+            <td>$2,800</td>
+        </tr>
+    </table>
+
+    <h2>Travel Gallery</h2>
+    <img src="https://via.placeholder.com/500" alt="Travel Image 1">
+    <img src="https://via.placeholder.com/500" alt="Travel Image 2">
+    <img src="https://via.placeholder.com/500" alt="Travel Image 3">
+    <p><a href="https://www.womenontheroad.com" target="_blank">Learn More About Traveling Safely</a></p>
+</section>
+
+<script>
+    let images = document.querySelectorAll('img');
+    let index = 0;
+    setInterval(() => {
+        images.forEach(img => img.style.display = 'none');
+        images[index].style.display = 'block';
+        index = (index + 1) % images.length;
+    }, 2000);
+</script>
+
+<footer>
+    <p>&copy; 2025 Gals on the Go. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

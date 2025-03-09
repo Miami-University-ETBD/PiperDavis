@@ -1,110 +1,135 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gals on the Go</title>
+    <title>Home - Gals on the Go</title>
     <style>
+        /* Simple styling to enhance the page layout */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
         }
         header {
-            background-color: #ff69b4;
+            background-color: #f0a500;
             color: white;
-            padding: 1rem;
+            padding: 15px;
             text-align: center;
         }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: white;
+        nav a {
+            margin: 10px;
             text-decoration: none;
-            font-weight: bold;
-        }
-        #hero {
-            text-align: center;
-            padding: 50px 20px;
-            background-color: #ffb6c1;
             color: white;
         }
-        .btn {
-            display: inline-block;
-            background-color: white;
-            color: #ff69b4;
-            padding: 10px 20px;
-            margin-top: 10px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
+        nav a:hover {
+            color: #333;
         }
         section {
             padding: 20px;
-            text-align: center;
+        }
+        #testimonials div {
+            display: none;
+        }
+        #testimonials div.active {
+            display: block;
         }
         footer {
-            background-color: #ff69b4;
-            color: white;
+            background-color: #f0f0f0;
             text-align: center;
             padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Gals on the Go</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#destinations">Destinations</a></li>
-                <li><a href="#safety">Safety Tips</a></li>
-                <li><a href="#budget">Budget Travel</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="hero">
-        <h2>Safe & Affordable Travel for Women</h2>
-        <p>Your guide to exploring the world with confidence and ease.</p>
-        <a href="#destinations" class="btn">Start Exploring</a>
-    </section>
-    
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Gals on the Go is dedicated to helping women travel safely and affordably. We provide travel guides, safety tips, and budget-friendly advice.</p>
-    </section>
-    
-    <section id="destinations">
-        <h2>Top Destinations</h2>
-        <p>Discover the best places to travel as a solo female traveler.</p>
-    </section>
-    
-    <section id="safety">
-        <h2>Safety Tips</h2>
-        <p>Learn how to stay safe while traveling alone or with friends.</p>
-    </section>
-    
-    <section id="budget">
-        <h2>Budget Travel</h2>
-        <p>Explore tips and tricks for traveling on a budget without compromising safety.</p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Gals on the Go. All rights reserved.</p>
-    </footer>
+
+<header>
+    <h1>Welcome to Gals on the Go</h1>
+    <nav>
+        <a href="about.html">About Us</a>
+        <a href="index.html">Home</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#community">Our Community</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="intro">
+    <h2>What is Gals on the Go?</h2>
+    <p><strong>Gals on the Go</strong> is a travel platform designed specifically for women who want to explore the world with confidence, adventure, and community. Founded by <u>Piper Davis</u>, a passionate traveler with over a decade of experience in travel consulting, Gals on the Go offers resources, tips, and a supportive network to help women travel safely and affordably.</p>
+    <p>We believe that every woman deserves the chance to explore the world on her own terms, whether that's embarking on a solo adventure, traveling with friends, or joining a group trip with like-minded women. We focus on providing a platform that offers practical travel tips, real-life stories, and a community of support for women at every stage of their travel journey.</p>
+</section>
+
+<section id="testimonials">
+    <h2>What Our Users Are Saying</h2>
+    <div class="testimonial active">
+        <h3><strong>Sarah T.</strong> – Solo Traveler</h3>
+        <p>"Thanks to Gals on the Go, I had the confidence to book my first solo trip to Italy. I felt supported every step of the way, from safety tips to travel recommendations. The community is amazing, and it really feels like a sisterhood of travelers!"</p>
+    </div>
+    <div class="testimonial">
+        <h3><strong>Jessica M.</strong> – Budget Traveler</h3>
+        <p>"As someone who loves to travel but is on a tight budget, Gals on the Go has been a lifesaver. The budget tips and resources helped me save so much money while still having incredible experiences. I can't wait to plan my next trip!"</p>
+    </div>
+    <div class="testimonial">
+        <h3><strong>Emily K.</strong> – Group Traveler</h3>
+        <p>"I joined a Gals on the Go group trip to Thailand, and it was one of the best decisions I've ever made. Not only did I make lifelong friends, but the trip was so well-organized and fun! The support from other women made the experience unforgettable."</p>
+    </div>
+    <button id="nextTestimonial">Next Testimonial</button>
+</section>
+
+<section id="values">
+    <h2>Our Core Values</h2>
+    <p>At <strong>Gals on the Go</strong>, our values are the foundation of everything we do. These values guide our mission to empower women to travel safely and confidently:</p>
+    <ul>
+        <li><strong>Safety First:</strong> Your safety is our priority. We provide up-to-date safety tips and advice for all types of travel.</li>
+        <li><i><strong>Inclusivity:</strong></i> We believe that every woman, regardless of background or budget, deserves the opportunity to travel.</li>
+        <li><strong><u>Adventure:</u></strong> We encourage women to step out of their comfort zones, try new things, and embrace the unknown.</li>
+        <li><i><u>Respect:</u></i> Respect for cultures, environments, and other travelers is key to fostering meaningful experiences.</li>
+    </ul>
+</section>
+
+<section id="community">
+    <h2>Our Community</h2>
+    <p>Gals on the Go is more than just a travel platform—it’s a thriving community of women supporting each other, sharing stories, and connecting through the love of travel. Here's how we help foster that sense of connection:</p>
+    <ul>
+        <li><strong>Forums:</strong> Ask questions, share tips, and discuss your travel experiences with other women travelers.</li>
+        <li><u><i>Events:</i></u> Attend meet-ups and gatherings around the world, designed to help you connect with fellow travelers.</li>
+        <li><strong><u>Social Media:</u></strong> Stay connected and inspired through our social media channels, where we share travel stories and tips.</li>
+        <li><i><strong>Group Travel:</strong></i> Join like-minded women on group trips for a safe, fun, and enriching travel experience.</li>
+    </ul>
+    <p><strong>Being part of our community means you're never alone in your travel journey.</strong> We believe in the power of women helping women, and we’re here to make your travel dreams a reality!</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need help planning your next adventure, we'd love to hear from you. Reach out to us via:</p>
+    <p>Email: <u><strong>info@galsonthego.com</strong></u></p>
+    <p>Phone: (123) 456-7890</p>
+    <p>Follow us on social media:</p>
+    <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2025 Gals on the Go. All rights reserved.</p>
+</footer>
+
+<script>
+    let currentIndex = 0;
+    const testimonials = document.querySelectorAll('.testimonial');
+    const nextTestimonialButton = document.getElementById('nextTestimonial');
+
+    nextTestimonialButton.addEventListener('click', () => {
+        testimonials[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % testimonials.length;
+        testimonials[currentIndex].classList.add('active');
+    });
+</script>
+
 </body>
 </html>
+
+
