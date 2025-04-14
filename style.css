@@ -2,7 +2,7 @@
 body {
     font-family: 'Helvetica Neue', sans-serif;
     background-color: #fff0f5; /* light pink */
-    color: #333;
+    color: #e8b8ec;
     margin: 0;
     padding: 0;
 }
@@ -52,7 +52,7 @@ input[type="email"], input[type="text"] {
 
 /* Modal */
 .modal {
-    background-color: white;
+    background-color: rgb(234, 182, 230);
     border-radius: 15px;
     padding: 2rem;
 }
