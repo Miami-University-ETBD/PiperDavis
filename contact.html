@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Gals on the Go</title>
+</head>
+<body>
+
+
+
+<section id="mission">
+    <background-color: #f797b8;></background-color:> 
+    <h2>Our Mission</h2>
+    <p><i>Gals on the Go</i> is committed to empowering women to explore the world with confidence, safety, and affordability. We believe that <u>every woman</u> deserves the opportunity to discover new places and cultures, regardless of budget or experience.</p>
+    <p>Our mission focuses on <strong>three key pillars</strong>:</p>
+    <ul>
+        <li><strong><i>Empowerment</i></strong>: Providing women with the resources and confidence to travel on their own terms.</li>
+        <li><u><strong>Accessibility</strong></u>: Making travel affordable for everyone, with tips on saving money and finding great deals.</li>
+        <li><i><strong>Community</strong></i>: Connecting women travelers from all over the world to support each other.</li>
+    </ul>
+    <a href="#contact">Get in Touch</a>
+</section>
+
+<section id="team">
+    <h2>Meet the Team</h2>
+    <p>Our team consists of passionate and experienced travelers who are dedicated to supporting other women on their travel journeys. Below are the key members of our team:</p>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Experience</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Emma</strong></td>
+                <td><u>Founder & CEO</u></td>
+                <td><i>15+ years of travel experience, specializing in solo adventures</i></td>
+            </tr>
+            <tr>
+                <td><strong>Amy</strong></td>
+                <td><u>Travel Expert</u></td>
+                <td><i>Expert in budget travel, hiking, and cultural exchanges</i></td>
+            </tr>
+            <tr>
+                <td><strong>Olivia</strong></td>
+                <td><u>Community Manager</u></td>
+                <td><i>Building a global network for women to share their travel experiences</i></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="values">
+    <h2>Our Values</h2>
+    <p>We operate with a strong set of values that guide our work:</p>
+    <ul>
+        <li><strong>Safety First</strong>: We prioritize travel safety through expert advice, tips, and resources.</li>
+        <li><u><i>Budget-Friendly</i></u>: We believe in making travel affordable for everyone, providing resources for cost-effective trips.</li>
+        <li><strong>Inclusivity</strong>: Our community welcomes women from all backgrounds and experiences.</li>
+        <li><u><strong>Adventure</strong></u>: We encourage pushing boundaries, trying new things, and embracing the unknown.</li>
+    </ul>
+</section>
+
+<section id="image-slider">
+    <h2>Our Travel Highlights</h2>
+    <img src="https://via.placeholder.com/500" alt="Travel Image 1" id="slide">
+    <p><i>Join us as we explore breathtaking destinations.</i> Whether it's hiking through mountains, relaxing on tropical beaches, or immersing ourselves in vibrant cultures, we are always on the go.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <u><strong>info@galsonthego.com</strong></u></p>
+    <p>Phone: (123) 456-7890</p>
+    <p>Follow us on social media:</p>
+    <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+    </ul>
+</section>
+
+<script>
+    let images = [
+        'https://via.placeholder.com/500',
+        'https://via.placeholder.com/500?text=Travel+Image+2',
+        'https://via.placeholder.com/500?text=Travel+Image+3'
+    ];
+
+    let index = 0;
+    function changeImage() {
+        document.getElementById('slide').src = images[index];
+        index = (index + 1) % images.length;
+    }
+    setInterval(changeImage, 2000);
+</script>
+
+<footer>
+    <p>&copy; 2025 Gals on the Go. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
