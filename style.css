@@ -1,0 +1,97 @@
+/* Base styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #fff0f5; /* light pink */
+    color: #e8b8ec;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #ff69b4; /* hot pink */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Main content area */
+main {
+    padding: 2rem;
+}
+
+/* Buttons */
+button, .btn {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+button:hover, .btn:hover {
+    background-color: #ff1493; /* deeper pink */
+}
+
+/* Form Inputs */
+input[type="email"], input[type="text"] {
+    padding: 0.5rem;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+/* Modal */
+.modal {
+    background-color: rgb(234, 182, 230);
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.modal-content {
+    text-align: center;
+}
+
+.modal-footer {
+    background-color: #ffe4e1; /* very light pink */
+    border-top: 1px solid #ffb6c1;
+    padding: 1rem;
+    text-align: right;
+}
+
+/* Radio buttons section */
+.radio-group {
+    margin: 1rem 0;
+}
+
+.radio-group label {
+    margin-right: 1rem;
+    font-weight: 500;
+}
+
+/* Response messages */
+#gals-response, #email-response {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #d63384; /* a vibrant pink */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        font-size: 1.5rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
